@@ -1,2 +1,2 @@
 # DataCat
-Data Categorization Algorythms
+Data Categorization Algorithms
