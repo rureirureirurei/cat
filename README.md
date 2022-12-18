@@ -1,2 +1,4 @@
 # DataCat
-Data Categorization Algorithms
+Raw tabular data semantical analysis.
+
+
