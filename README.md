@@ -1,4 +1,7 @@
-# DataCat
-Raw tabular data semantical analysis.
+# cat(egorical) data analysis.
+
+Raw tabular data semantical mapping.
+
+TODO
 
 
