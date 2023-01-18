@@ -23,6 +23,7 @@ def _is_csv(s):
     return True
 
 def label(path='./data/', path_labeled='./labels/'):
+
     if (os.getcwd().split('/')[-1] == 'repl'):
         path = '.' + path
         path_labeled = '.' + path_labeled
@@ -35,7 +36,13 @@ def label(path='./data/', path_labeled='./labels/'):
             print("SKIP\nfound labels file" + source)
             continue
 
-        data = pd.read_csv(path + source, encoding='utf-8')
+        try:
+            data = pd.read_csv(path + source, encoding='utf-8')
+        except:
+            f = open("logs", "a")
+            f.write(source + "\n")
+            f.close()
+            continue
         labels = []
 
         print('\n\n'+source+'\n'+str(data.columns.shape[0])+'\n')
