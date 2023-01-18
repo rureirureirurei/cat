@@ -10,15 +10,12 @@ temporal:
 numeric:
     fixed:
         money
-    
     float:
         percentage
         latitude
         longitude
         probability
-    
     age
-
     healthcare:
         height:
             height-feet
@@ -69,9 +66,7 @@ code:
     credit-card-number
     bank-account-number
     vehicle-registration-number
-    upc-code
-    asin-code
-    isbn-number
+    product-code
     license-plate-number
     mac-address
     product-code
