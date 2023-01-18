@@ -1,3 +1,9 @@
 __pycache__/*
 .DS_Store
 .ipynb_checkpoints/*
+.replit
+poetry.lock
+pyproject.toml
+replit.nix
+venv/*
+
