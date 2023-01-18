@@ -6,7 +6,7 @@ import os
 
 import numpy as np
 import pandas as pd
-from regulars import regulars
-from labeler import label
+from helpers.regulars import regulars
+from helpers.labeler import label
 
 label()

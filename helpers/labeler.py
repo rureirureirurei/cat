@@ -7,7 +7,7 @@ import os
 import numpy as np
 import pandas as pd
 from tqdm.auto import tqdm
-from regulars import regulars
+from helpers.regulars import regulars
 
 def _sources(path):
     result = [i for i in os.listdir(path) if i.endswith(".csv")]
@@ -61,6 +61,7 @@ def label(path='./data/', path_labeled='./labels/'):
 
         print("Labels: ", str(labels) + '\n\n')
         namepath = path_labeled + source
-    pd.DataFrame(labels).to_csv(namepath, index=False, header=False)
+        pd.DataFrame(labels).to_csv(namepath, index=False, header=False)
+        print("Saved labels ✅\n")
 
     
