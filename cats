@@ -7,7 +7,8 @@ temporal:
     year
     day
 
-numeric:
+numeric:    
+    integer
     fixed:
         money
     float:
