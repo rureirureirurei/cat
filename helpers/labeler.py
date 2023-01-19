@@ -36,7 +36,7 @@ def label(path='./data/', path_labeled='./labels/'):
       continue
 
     if os.path.exists(path_labeled + source):
-      print("SKIP\nfound labels file" + source)
+      #print("SKIP\nfound labels file" + source)
       continue
 
     try:
@@ -48,29 +48,31 @@ def label(path='./data/', path_labeled='./labels/'):
       continue
     labels = []
 
-    print('\n\nfilename: ' + source + '\ncols: ' + str(data.columns.shape[0]) +
-          '\n')
+    #print('\n\nfilename: ' + source + '\ncols: ' + str(data.columns.shape[0]) +'\n')
 
     for column in data.columns:
 
       batch = data[column][:100].to_numpy()
       tags = regulars(batch, column)
 
-      print(data[column][:7])
+      #print(data[column][:7])
       if tags:
-        print("\nSKIP\ndetected types " + tags + "\n")
+        #print("\nSKIP\ndetected types " + tags + "\n")
         labels.append(tags)
         continue
 
-      label = input()
+      labels.append('?')
+      
 
-      if label == '???':
-        labels = labels + ['?'] * (data.columns.shape[0] - len(labels))
-        break
+      #label = input()
 
-      labels.append(label)
+      #if label == '???':
+      #  labels = labels + ['?'] * (data.columns.shape[0] - len(labels))
+      #  break
 
-    print("Labels: ", str(labels) + '\n\n')
+      #labels.append(label)
+
+    #print("Labels: ", str(labels) + '\n\n')
     namepath = path_labeled + source
     pd.DataFrame(labels).to_csv(namepath, index=False, header=False)
-    print("Saved labels ✅\n")
+    #print("Saved labels " + source + " ✅\n")
