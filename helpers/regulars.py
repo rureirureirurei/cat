@@ -1,21 +1,74 @@
 import re
+import numpy as np
+
+# Some massive refactoring needed ...
+# Shitty af 
+
+def _integer(seq):
+    res = np.array(list(map(lambda x: str(x).isnumeric(), seq))).mean()
+    if res > threshold: 
+        return ['numeric', 'integer'] 
+    return []
+
+def _float(seq):
+    def is_float(x):
+        x = str(x)
+        return x.count('.') == 1 and x.replace('.','').isnumeric()
+    res = np.array(list(map(is_float, seq))).mean()
+    if res > threshold: 
+        return ['numeric', 'float'] 
+    return []
+
+def _fixed(seq):
+    #TODO
+    return []
+
+def _money(seq):
+    #TODO
+    return []
+
+def _percentage(seq):
+    #TODO
+    return []
+
+
+    
+threshold = 0.9
+max_len = 100
+    
+detectors = [
+    _float, 
+    _integer,
+#    _fixed, 
+#    _money,
+#    _percentage
+]
+
+def set_to_csv(st):
+    if len(st) == 0:
+        return None
+    return str(st)[1: -1]
 
 def regulars(batch, header):
+    tags = set()
+     
     header = header.lower()
     
+    #Special cases
+    for detector in detectors:
+        for t in detector(batch): tags.add(t)
+  
     for reg in _regulars:
-        tags = reg[1]
-        
         # Check header
         for hdr in reg[0]['header']:
             if hdr in header:
-                return tags
+                tags.add(reg[1])
         
         # Check regexes, count average
         res = 0
         for s in batch:
             s = str(s)
-            if len(str(s)) > 100:
+            if len(str(s)) > max_len:
                 continue
             match = False
             for regx in reg[0]['regex']:
@@ -23,9 +76,9 @@ def regulars(batch, header):
                     match = True
             res += match
             
-        # TODO - make this configurable
-        if res / batch.shape[0] > 0.8:
-            return tags
+        if res / batch.shape[0] > threshold:
+            for t in reg[1]: tags.add(t)
+    return set_to_csv(tags)
         
 #TODO make it so each entry is a dict with 3 keys, not tuple
 _regulars = [

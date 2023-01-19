@@ -69,6 +69,7 @@ def label(path='./data/', path_labeled='./labels/'):
         break
 
       labels.append(label)
+    break
 
     print("Labels: ", str(labels) + '\n\n')
     namepath = path_labeled + source
