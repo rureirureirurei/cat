@@ -1,14 +1,17 @@
 temporal:
-    date:
-        birth-date
-        death-date
+    date
     time
     datetime
     year
     day
 
+sport:
+    competition
+    club
+
 numeric:    
     integer
+    population
     fixed:
         money
     float:
@@ -16,20 +19,27 @@ numeric:
         latitude
         longitude
         probability
-    age
-    healthcare:
-        height:
-            height-feet
-            height-cm
-        weight:
-            weight-kg
-            weight-lbs
+    age 
+
+healthcare:
+    diagnosis:
+        reason-of-accident
+        severity
+    symptom
+    recomendation
+    hospital-department
+    height:
+        height-ft
+        height-cm
+    weight:
+        weight-kg
+        weight-lbs
 #
 geo:
     city
     country
-    state
     continent
+    state
     region
     postal-code
     address
@@ -38,6 +48,8 @@ geo:
 personal:
     name
     surname
+    name-surname
+    username
     gender
     race
     nationality
@@ -46,6 +58,7 @@ personal:
     education-level
     marital-status
     university
+    position
 
 #
 contact:
@@ -56,10 +69,6 @@ contact:
 identifier:
     id
     serial-number
-
-#
-healthcare:
-    diagnosis
 
 #
 code:
@@ -80,9 +89,13 @@ web:
     url
     
 
+industry
+
 # small number of unique entries, e.g: 1,2,3,3,1,2,3,2,2,2
-classes: 
-    boolean
+classes
+boolean
 
 # any long strings 
 description
+
+

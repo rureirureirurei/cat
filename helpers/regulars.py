@@ -51,7 +51,7 @@ detectors = [
 def set_to_csv(st):
     if len(st) == 0:
         return None
-    return str(st)[1: -1].replace('\'', '')
+    return str(st)[1: -1].replace('\'', '').replace('\"', '')
 
 def regulars(batch, header):
     tags = set()

@@ -1,0 +1,7 @@
+"integer, numeric"
+username
+"personal, name"
+"float, numeric"
+description
+"country, geo"
+boolean
