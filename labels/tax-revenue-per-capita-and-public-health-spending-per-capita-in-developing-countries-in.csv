@@ -1,0 +1,7 @@
+country
+country
+"integer, numeric"
+"float, numeric"
+"float, numeric"
+continent
+"latitude, float, geo, numeric"

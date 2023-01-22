@@ -1,0 +1,9 @@
+"float, numeric"
+"geo, city"
+"latitude, geo"
+"integer, numeric"
+"integer, numeric"
+population
+float 
+"country, geo"
+year

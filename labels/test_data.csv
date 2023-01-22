@@ -1,0 +1,17 @@
+"id, integer, numeric"
+"integer, numeric"
+classes
+"integer, numeric"
+classes
+"integer, numeric"
+"healthcare, hospital-depatrment"
+classes
+classes
+"float, numeric"
+"id, integer, numeric"
+"float, numeric"
+"healthcare, reason-of-accidant"
+"healthcare, diagnosis, severity"
+"integer, numeric"
+age
+"float, numeric"
