@@ -6,7 +6,7 @@ import os
 
 import numpy as np
 import pandas as pd
-from helpers.regulars import regulars
-from helpers.labeler import label
+from modules.regulars import regulars
+from modules.labeler import label
 
-label()
+label(path='./data/small/', path_labels='./data/labels/', skip_exist=True)
