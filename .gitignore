@@ -1,6 +1,7 @@
 __pycache__/*
 modules/__pycache__/*
 data/*
+cached/*
 .DS_Store
 .ipynb_checkpoints/*
 .replit
