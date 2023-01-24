@@ -1,6 +1,6 @@
 __pycache__/*
 modules/__pycache__/*
-data/unused/*
+data/*
 cached/*
 .DS_Store
 .ipynb_checkpoints/*
