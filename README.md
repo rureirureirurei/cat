@@ -1,4 +1,4 @@
-# cat(egorical) data analysis.
+# cat(egorical data analysis).
 
 Raw tabular data semantical mapping using statistical features.
 
@@ -34,14 +34,13 @@ cat/
 |    ├─── parquet        # data currently used for training and validating model
 |    
 |
-|
 ├─ .gitignore
 |
 ├─ overview.ipynb        # Notebook that demonstrates the project's core from A to Z
 |
-├─README.md
+├─ README.md
 |
-├─LABELING.md            # Guide for those who helped me with data labeling :D
+├─ LABELING.md            # Guide for those who helped me with data labeling :D
 ```
 
 Please note that the `cached` and `data` are not in the repository due to their large size.
@@ -52,4 +51,4 @@ TODO
 # Dataset used
 TODO
 
-The project was in some degree inspired by this [Research](https://arxiv.org/pdf/1905.10688.pdf).
+The project was in some degree inspired by this [research](https://arxiv.org/pdf/1905.10688.pdf).
