@@ -28,10 +28,10 @@ cat/
 |
 ├─── data/
 |    |
-|    ├─── unused         # 300+ GB of mostly unlabeled data
+|    ├─ unused         # 300+ GB of mostly unlabeled data
 |    |
 |    |
-|    ├─── parquet        # data currently used for training and validating model
+|    ├─ parquet        # data currently used for training and validating model
 |    
 |
 ├─ .gitignore
