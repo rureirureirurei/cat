@@ -19,6 +19,22 @@ cat/
 │    ├─ formatter.ipynb  # Helper functions for parsing raw-raw data
 |
 |
+├─── cached/
+|    |
+│    ├─ model.joblib     # Model weights
+|    |
+│    ├─ features.npy     # Statistical features extracted from the dataset
+|
+|
+├─── data/
+|    |
+|    ├─── unused         # 300+ GB of mostly unlabeled data
+|    |
+|    |
+|    ├─── parquet        # data currently used for training and validating model
+|    
+|
+|
 ├─ .gitignore
 |
 ├─ overview.ipynb        # Notebook that demonstrates the project's core from A to Z
@@ -27,6 +43,9 @@ cat/
 |
 ├─LABELING.md            # Guide for those who helped me with data labeling :D
 ```
+
+Please note that the `cached` and `data` are not in the repository due to their large size.
+
 # Statistical features 
 TODO
 
