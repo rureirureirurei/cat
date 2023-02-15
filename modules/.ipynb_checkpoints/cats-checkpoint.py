@@ -1,7 +1,6 @@
 # Semantic Types used in this project
 
-cats = {
- 'address': 0,
+cats = {'address': 0,
  'affiliate': 1,
  'affiliation': 2,
  'age': 3,
@@ -78,5 +77,4 @@ cats = {
  'team Name': 74,
  'type': 75,
  'weight': 76,
- 'year': 77
-}
+ 'year': 77}
