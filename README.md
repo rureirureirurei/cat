@@ -25,7 +25,6 @@ cat/
 |    |
 |    ├─ unused           # 300+ GB of mostly unlabeled data
 |    |
-|    |
 |    ├─ parquet          # data currently used for training and validating model
 |    
 |
@@ -45,9 +44,12 @@ We extract following statistical features from each sequence of values:
   - min, mean, max, standart deviation of length
   - min, mean, max, standart deviation of fractions of alphabetic values
   - min, mean, max, standart deviation of fractions of numeric values
+  - etc (you can check it in the ```./modules/FeaturesExtractor.py```)
   
 
 # Dataset used
-TODO
+Here I used dataset from this [research](https://arxiv.org/pdf/1905.10688.pdf).
+
+Although there was initially an attempt to create the data from scratch, it ultimately failed due to the inability of humans to properly identify the categories. The ```labeler``` can be used for labeling other, more human-like data though.
 
 The project was in some degree inspired by this [research](https://arxiv.org/pdf/1905.10688.pdf).
