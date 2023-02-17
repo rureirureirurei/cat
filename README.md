@@ -40,10 +40,10 @@ cat/
 Please note that the `cached` and `data` are not in the repository due to their large size.
 
 # Statistical features 
-We extract following statistical features from each sequence of values:
-  - min, mean, max, standart deviation of length
-  - min, mean, max, standart deviation of fractions of alphabetic values
-  - min, mean, max, standart deviation of fractions of numeric values
+We extract min, mean, max, std statistical features from each sequence of values:
+  - length
+  - percentage of alphabetic values
+  - percentage of numeric values
   - etc (you can check it in the ```./modules/FeaturesExtractor.py```)
   
 
