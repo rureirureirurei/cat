@@ -1,6 +1,6 @@
 # cat(egorical data analysis).
 
-Raw tabular data semantical mapping using statistical features.
+Raw tabular data semantical mapping using statistical features. Check the presentation and `overview.ipynb` notebook for more details
 
 # Data structure
 ```
