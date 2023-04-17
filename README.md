@@ -2,6 +2,9 @@
 
 Raw tabular data semantical mapping using statistical features. Check the presentation and `overview.ipynb` notebook for more details
 
+# Results 
+TODO
+
 # Data structure
 ```
 cat/
