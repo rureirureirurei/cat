@@ -3,7 +3,7 @@
 Raw tabular data semantical mapping using statistical features. Check the presentation and `overview.ipynb` notebook for more details
 
 # Results 
-TODO
+The best performing model (nn with 2 hidden layers) has an accuracy of 0.84. That is a decent result considering numeruous classes.
 
 # Data structure
 ```
